@@ -3,6 +3,12 @@
 * {
     padding: 0;
     margin: 0;
+    /* border: 2px solid; */
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
 }
 h1 {
     font-size: 35px;
@@ -12,34 +18,38 @@ h2 {
     font-size: 25px;
 }
 
-.center-heading {
+h1, h2 {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-weight: bold;
-    font-family: monospace;
 }
 
-#site-pic {
-    height: auto;
-    width: 700px;
+.pic-container {
+    margin: 20px;
+    padding: 10px 50px 10px 160px;
+}
+
+.pic-container img {
     border-radius: 20px;
-    margin-left: 25rem;
 }
 
 .recipe-links {
+    margin: 10px;
+}
+
+.recipe-links ul li {
+    margin: 10px;
+    list-style: none;
     text-align: center;
-    
 }
 
-.recipe-links li a {
-    font-size: 19px;
+.recipe-links ul li a {
+    font-size: 18px;
     text-decoration: none;
-    gap: 4rem;
-    color: #000;
+    color: #746969;
 }
 
-.recipe-links li a:hover {
+.recipe-links ul li a:hover {
     text-decoration: underline;
+    text-underline-offset: .5rem;
+    color: #0a0101;
     cursor: pointer;
 }
