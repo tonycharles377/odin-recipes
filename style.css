@@ -1,5 +1,7 @@
 /* INDEX PAGE */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +9,7 @@
 }
 
 body {
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
 }
 h1 {
@@ -19,15 +21,31 @@ h2 {
 }
 
 h1, h2 {
-    text-align: center;
+    margin: 20px 0;
 }
 
+.text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+}
+
+.text.heading_1 {
+    font-size: 2.5rem;
+}
+
+.text.text.heading_2 {
+    font-size: 2rem;
+}
+
+
 .pic-container {
-    margin: 20px;
-    padding: 10px 50px 10px 160px;
+    margin: 20px 0px;
+    padding: 0;
 }
 
 .pic-container img {
+    height: auto;
+    width: 800px;
     border-radius: 20px;
 }
 
@@ -37,14 +55,13 @@ h1, h2 {
 
 .recipe-links ul li {
     margin: 10px;
-    list-style: none;
-    text-align: center;
+    list-style-type: circle;
 }
 
 .recipe-links ul li a {
     font-size: 18px;
     text-decoration: none;
-    color: #746969;
+    color: #504b4b;
 }
 
 .recipe-links ul li a:hover {
