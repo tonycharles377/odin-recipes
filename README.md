@@ -1,4 +1,3 @@
 # odin-recipes
-this is a course-work project.
-I'll be applaying HTML knowledge
-to build a recipe.
+this is my first coursework project in The Odin Project curriculum.
+I'll be applying basic HTML and CSS knowledge to build a recipe website.
