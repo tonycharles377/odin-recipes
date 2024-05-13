@@ -7,10 +7,12 @@
 
 body{
     background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
 }
 .site_logo {
     font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: monospace;
 }
 
 .site_logo a{
@@ -65,7 +67,7 @@ h2 {
     text-decoration: none;
     color: black;
     font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: monospace;
 }
 
 #header ul li a:hover{
@@ -78,4 +80,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
 }
