@@ -9,6 +9,7 @@ body{
     background-color: #f9fafb;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 .site_logo {
     font-size: 35px;
@@ -22,10 +23,6 @@ body{
 
 .site_logo a:hover{
     cursor: pointer;
-}
-
-h2 {
-    font-size: 25px;
 }
 
 .center-heading {
@@ -85,4 +82,47 @@ header{
 #home{
     display: flex;
     flex-direction: column;
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+    padding-right: 25rem;
+    padding-left: 25rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#body img{
+    border-radius: 20px;
+}
+
+#body h1{
+    font-size: 35px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-family: monospace;
+}
+
+#body h2{
+    font-size: 28px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-family: monospace;
+}
+
+#body h3{
+    font-size: 24px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-family: monospace;
+}
+
+#body ul, ol{
+    margin-left: 1rem;
+}
+
+#body p{
+    font-size: 20px;
+    display: block;
 }
