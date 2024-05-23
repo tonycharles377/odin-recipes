@@ -1,19 +1,19 @@
-/* INDEX PAGE */
-
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
     background-color: #f9fafb;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
 }
 .site_logo {
-    font-size: 35px;
-    font-family: monospace;
+    font-size: 2rem;
+    padding-right: 20px;
 }
 
 .site_logo a{
@@ -27,43 +27,36 @@ body{
 
 .center-heading {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     font-weight: bold;
-    font-family: monospace;
 }
 
 #site-pic {
     height: auto;
-    width: 700px;
+    max-width: 700px;
     border-radius: 20px;
+    align-self: center;
 }
 
 #header {
-    /*border: 3px solid red; used to visualize the header div in browser*/
-    height: 55px;
+    min-height: 60px;
     background-color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 10px 50px;
 }
 
 #header ul{
     display: flex;
     list-style-type: none;
-    margin-left: 20px;
 }
 
 #header li{
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 #header ul li a{
     text-decoration: none;
     color: black;
-    font-size: 25px;
-    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 #header ul li a:hover{
@@ -72,49 +65,47 @@ body{
     cursor: pointer;
 }
 
-header{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#home{
-    display: flex;
-    flex-direction: column;
-}
-
 #body{
     display: flex;
     flex-direction: column;
-    padding-right: 25rem;
-    padding-left: 25rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    margin: 0rem 1rem;
+    padding-bottom: 20px;
 }
 
 #body img{
     border-radius: 20px;
+    max-width: 100%;
+    max-height: auto;
+}
+
+h1, h2{
+    /* padding: 24px 0px 8px; */
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+h3{
+    /* padding: 8px 0; */
+    padding-top: 8px;
+    padding-bottom: px;
 }
 
 #body h1{
-    font-size: 35px;
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-    font-family: monospace;
+    font-size: 2.3rem;
 }
 
 #body h2{
-    font-size: 28px;
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
-    font-family: monospace;
+    font-size: 1.8rem;
 }
 
 #body h3{
-    font-size: 24px;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    font-family: monospace;
+    font-size: 1.2rem;
 }
 
 #body ul, ol{
@@ -122,6 +113,9 @@ header{
 }
 
 #body p{
-    font-size: 20px;
     display: block;
+}
+
+.line_height{
+    line-height: 30px;
 }
