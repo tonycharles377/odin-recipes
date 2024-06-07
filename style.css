@@ -4,19 +4,33 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-color-light-mode: #f9fafb;
+    --bg-color-dark-mode: rgb(17 24 39);
+    --text-color-light-mode: black;
+    --text-color-dark-mode: white;
+    --primary-ff: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 html{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--primary-ff);
 }
 
 body{
-    background-color: #f9fafb;
+    background-color: var(--bg-color-light-mode);
+    color: var(--text-color-light-mode);
+}
+
+body.dark{
+    background-color: var(--bg-color-dark-mode);
+    color: var(--text-color-dark-mode);
 }
 .site_logo {
     padding-right: 20px;
 }
 
 .site_logo a{
-    color: black;
+    color: inherit;
     text-decoration: none;
     font-size: clamp(1rem, 5vh, 5rem);
 }
@@ -38,8 +52,20 @@ body{
 }
 
 #header {
+    background-color: var(--bg-color-light-mode);
+    color: var(--text-color-light-mode);
+    border-bottom: lightgray 1px solid;
     min-width: 100%;
-    background-color: #fff;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+}
+
+body.dark #header{
+    background-color: var(--bg-color-dark-mode);
+    color: var(--text-color-dark-mode);
+    border-bottom: black 1.5px solid;
+    min-width: 100%;
     padding: 10px 50px;
     position: sticky;
     top: 0;
@@ -56,8 +82,8 @@ body{
 }
 
 #header ul li a{
+    color: inherit;
     text-decoration: none;
-    color: black;
     font-size: clamp(.2rem, 3vh, 3rem);
     font-weight: 400;
 }
@@ -75,13 +101,13 @@ nav{
     align-items: center;
 }
 
-#body{
+#content{
     display: flex;
     flex-direction: column;
     margin: 2rem 1rem;
 }
 
-#body img{
+#content img{
     border-radius: 20px;
     max-width: 100%;
     max-height: auto;
@@ -99,26 +125,36 @@ h3{
     padding-top: 8px;
 }
 
-#body h1{
+#content h1{
     font-size: 2.3rem;
 }
 
-#body h2{
+#content h2{
     font-size: 1.8rem;
 }
 
-#body h3{
+#content h3{
     font-size: 1.2rem;
 }
 
-#body ul, ol{
+#content ul, ol{
     margin-left: 1rem;
 }
 
-#body p{
+#content p{
     display: block;
 }
 
 .line_height{
     line-height: 30px;
+}
+
+.moon-sun{
+    fill: var(--text-color-light-mode);
+    cursor: pointer;
+}
+
+body.dark .moon-sun{
+    fill: var(--text-color-dark-mode);
+    cursor: pointer;
 }
